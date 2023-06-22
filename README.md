@@ -8,8 +8,6 @@ Welcome and thank you for stopping by. This project focuses on a regression prob
 
 - [Motivation](#motivation)
 - [About the data](#about-the-data)
-- [Description](#description)
-- [About the data](#about-the-data)
 - [Results](#results)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
