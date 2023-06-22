@@ -2,12 +2,12 @@
 
 ## Welcome!  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30">
 
-We are happy that you are interested in exploring the history of the medal-winning countries in the most important sports competition worldwide, the Olympic Games. In this app you will find a summary of the Olympic performance of countries throughout history.
+Welcome and thank you for stopping by. This project focuses on a regression problem, aiming to demonstrate the various steps involved in developing a Machine Learning pipeline (pre-implementation stage), rather than emphasizing the intricacies of the modeling itself.
 
 ## Table of contents
 
 - [Motivation](#motivation)
-- [Explore the app](#explore-the-app)
+- [About the data](#about-the-data)
 - [Description](#description)
 - [About the data](#about-the-data)
 - [Installation](#installation)
@@ -15,49 +15,38 @@ We are happy that you are interested in exploring the history of the medal-winni
 
 ## Motivation
 
-The Olympic Games are one of the most anticipated sports competitions for sports fans and the most important competition for athletes and countries' sports federations. The level of skills demonstrated by the athletes in their respective disciplines during this competition raises the bar for what a human being is capable of, challenging the impossible and astonishing people worldwide.
-
-Being able to access statistics and indicators on the performance of Olympic athletes is of utmost importance in the planning of resources for sports federations, for these institutions it is necessary to understand what are the disciplines that have given the best results to their country and which ones have a great opportunity for improvement.
-
-As sports fans, knowing the statistics of our favorite athletes and sports is necessary to analyze a game or competition, as well as to be able to chat and debate with other sports enthusiasts.
-
-## Explore the app
-
-You can access the deployed app on [shinyapps.io here](https://tetrahydrofuran.shinyapps.io/olympulse/)!
-
-## Description
-
-![](img/Olympulse_demo_2.gif)
-
-The app contains two tabs:
-
-1. `Country Level Overview` includes an interactive map that allows the users to click into each country and view the country's records in both Summer and Winter Olympic Games, furthermore, showcases the most successful sport for each country in the history of the Olympic Games. In the side panel, there is a double-sided slider that allows the users to select the range of years they are interested in from 1896 to 2016. There are three menus that enable the users to select their country of interest (as an alternative way to using the interactive map), their sport of interest, and their season of interest (Summer or Winter). With the options selected, the users can view the trend (a line chart) in the total number of medals over the given period of time, the top five medal-winning years, and the medal count by type.
-
-2. `Medal Tally Breakdown` similar to the first tab, includes a double-sided slider that allows the users to select the range of years in addition to three menus that enable the users to select their country of interest, their season of interest, the medal type, sport and event. This section contains a table showing the medals by sport and a treemap showing the main sports.
+The objective of our model is to **predict the popularity of accommodations**, utilizing the objective variable `reviews_per_month`. This target variable serves as a reliable proxy for popularity since Airbnb incentivizes users to leave reviews on the platform. Consequently, reviews play a crucial role in decision-making when selecting accommodations from the numerous available options.
 
 ## About the data
 
-This was created using a historical dataset on the modern Olympic Games athletes, including both Summer and Winter games from Athens 1896 to Rio 2016. The dataset contains 271,116 registers including both medal winners and non-winners. However, we will focus on athletes who won an Olympic medal (39,783 records).
+The dataset comprises properties listed on Airbnb in New York in 2019. Each record in the dataset is associated with a unique identifier (id) and includes 15 attributes related to each property. Among these attributes, 6 are categorical, while 9 are numeric, encompassing both discrete and continuous values. The attributes provide information about the host, geographic location, property type, price, restrictions, and reviews. The dataset is substantial, containing nearly 49,000 records before any processing is performed. Below is a summary of the variables of the dataset:
 
-The data set is public and can be found in [tidytuesday](https://github.com/rfordatascience/tidytuesday). Follow this link to access to the source dataset [olympics.csv](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-07-27/olympics.csv).
+|variable |class     |description |
+|:--------|:---------|:-----------|
+|id                              |   int64  | Listing ID |
+|name                            | character | Listing name|
+| host_id                        |  int64  | Host ID|
+| host_name                       |  character | Host name|
+| neighbourhood_group             | character | Neighbourhood location|
+| neighbourhood                   | character | Neighbourhood area|
+| latitude                        | float64 | Latitude coordinates|
+| longitude                       | float64 | Longitude coordinates|
+| room_type                       | character | Listing space type (Entire home/apt, Private room, Other)|
+| price                           | int64  | Price in dollars|
+| minimum_nights                  | int64  | Count of nights minimum|
+| number_of_reviews               | int64  | Number of reviews|
+| last_review                     | character | Latest review|
+| reviews_per_month               | float64 | Number of reviews per month|
+| calculated_host_listings_count  | int64  | Count of listing per host|
+| availability_365                | int64  | Number of days when listing is available for booking|
 
-## Installation
+The data set is public and can be found in [kaggle](https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data).
 
-To install `OlymPulse` locally, you can do as follows:
+## Results
 
-1. Clone this repository to your local directory.
+## Dependencies
 
-2. Install all the packages required to run this app by executing the following command in your R console:
-
-    ``` bash
-    install.packages(c("shiny", "ggplot2", "tidyverse", "plotly", "leaflet", "leaflet.extras", "sf", "countrycode", "RColorBrewer", "treemapify", "bslib", "shinycssloaders", "shinytest2"))
-    ```
-
-3. After installing the packages, execute the following command to run the app:
-
-        RScript app.R
-
-4. Copy the address and paste it in your browser to load the dashboard.
+Trr
 
 ## Contributing
 
