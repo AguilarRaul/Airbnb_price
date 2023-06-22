@@ -10,7 +10,8 @@ Welcome and thank you for stopping by. This project focuses on a regression prob
 - [About the data](#about-the-data)
 - [Description](#description)
 - [About the data](#about-the-data)
-- [Installation](#installation)
+- [Results](#results)
+- [Dependencies](#dependencies)
 - [Contributing](#contributing)
 
 ## Motivation
@@ -44,22 +45,24 @@ The data set is public and can be found in [kaggle](https://www.kaggle.com/dgomo
 
 ## Results
 
+Please go to [Notebook](https://github.com/AguilarRaul/Airbnb_price/blob/main/notebooks/airbnb_regression.ipynb).
+
 ## Dependencies
 
-Trr
+1. I have created an environment `environment.yaml`, for the project to be reproduced locally. To create this environment locally, go to the root of this repository and run:
+
+    ``` bash
+    conda env create -f environment.yaml
+    ```
+
+2. Activate it by running:
+
+        conda activate Airbnb
 
 ## Contributing
 
-Interested in contributing? We are glad you are interested, please check out the [contributing guidelines](https://github.com/UBC-MDS/OlymPulse/blob/main/CONTRIBUTING.md). Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+Interested in contributing? We are glad you are interested, please check out the [contributing guidelines](https://github.com/AguilarRaul/Airbnb_price/blob/main/CONTRIBUTING.md). Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
 
 ## License
 
-`OlymPulse` was created by Raul Aguilar Lopez, Manvir Kohli and Crystal Geng. The materials of this project are licensed under the MIT License. If re-using/re-mixing please provide attribution and link to this webpage.
-
-## Contributors
-
-Crystal Geng, Manvir Kohli, Raul Aguilar
-
-<a href="https://github.com/UBC-MDS/OlymPulse/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=UBC-MDS/OlymPulse" />
-</a>
+This project was created by Raul Aguilar Lopez. The materials of this project are licensed under the MIT License. If re-using/re-mixing please provide attribution and link to this webpage.
